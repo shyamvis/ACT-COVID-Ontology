@@ -14,10 +14,10 @@
 * See https://www.cdc.gov/nchs/data/icd/ICD-10-CM-Official-Coding-Gudance-Interim-Advice-coronavirus-feb-20-2020.pdf
 * See https://www.hca.wa.gov/assets/billers-and-providers/billing-for-COVID-CPC-03-2020.pdf
 
-### Queries using existing ICD-10 codes
-* Count 1 for potential COVID-19: J12.89 OR J22 OR J98.8 OR J20.8 OR J40 OR J80 OR Z20.828
-* Count 2 for signs/symptoms indicative of COVID-19: R05 OR R06.02 OR R50.9
-* Count 3 for confirmed COVID-19: (J12.89 & B97.29) OR (J22 & B97.29) OR (J98.8 & B97.29) OR (J20.8 & B97.29) OR (J40 & B97.29) OR (J80 & B97.29) OR (Z20.828 & B97.29)
+### Queries using existing ICD-10 codes (broken down by day)
+* **Count 1 for potential COVID-19:** J12.89 OR J22 OR J98.8 OR J20.8 OR J40 OR J80 OR Z20.828
+* **Count 2 for signs/symptoms indicative of COVID-19:** R05 OR R06.02 OR R50.9
+* **Count 3 for confirmed COVID-19:** (J12.89 & B97.29) OR (J22 & B97.29) OR (J98.8 & B97.29) OR (J20.8 & B97.29) OR (J40 & B97.29) OR (J80 & B97.29) OR (Z20.828 & B97.29)
 
 
 
