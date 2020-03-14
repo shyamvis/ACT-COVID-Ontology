@@ -1,7 +1,7 @@
 ### Existing codes
 
 #### CDC coding guidelines for COVID-19 with existing ICD-10 codes
-* Pneumonia confirmed as due to COVID-19: J12.89 Other viral pneumonia & B97.29 Other coronavirus as the cause of diseases classified elsewhere
+* **Pneumonia confirmed as due to COVID-19:** J12.89 Other viral pneumonia & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * Lower respiratory infection due to COVID-19: J22 Unspecified acute lower respiratory infection & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * Respiratory infection due to COVID-19: NOSJ98.8 Other specified respiratory disorders & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * Acute Bronchitis confirmed as due to COVID-19: J20.8 Acute bronchitis due to other specified organisms & B97.29 Other coronavirus as the cause of diseases classified elsewhere
