@@ -1,6 +1,6 @@
 ## Existing codes
 
-### CDC coding guidelines for COVID-19 with existing ICD-10 codes
+### CDC coding guidelines for coding with existing ICD-10 codes
 * **Pneumonia confirmed as due to COVID-19:** J12.89 Other viral pneumonia & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Lower respiratory infection due to COVID-19:** J22 Unspecified acute lower respiratory infection & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Respiratory infection due to COVID-19:** NOSJ98.8 Other specified respiratory disorders & B97.29 Other coronavirus as the cause of diseases classified elsewhere
@@ -17,7 +17,7 @@
 
 ## New codes
 
-### ICD-10 for or diagnosis recording
+### ICD-10 for diagnosis recording
 * An emergency ICD-10 code of U07.1 is assigned to the disease diagnosis of COVID-19
 * See https://www.who.int/classifications/icd/covid19/en/
 
