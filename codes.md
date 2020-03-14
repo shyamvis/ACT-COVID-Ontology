@@ -1,6 +1,6 @@
-### Existing codes
+## Existing codes
 
-#### CDC coding guidelines for COVID-19 with existing ICD-10 codes
+### CDC coding guidelines for COVID-19 with existing ICD-10 codes
 * **Pneumonia confirmed as due to COVID-19:** J12.89 Other viral pneumonia & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Lower respiratory infection due to COVID-19:** J22 Unspecified acute lower respiratory infection & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Respiratory infection due to COVID-19:** NOSJ98.8 Other specified respiratory disorders & B97.29 Other coronavirus as the cause of diseases classified elsewhere
@@ -15,19 +15,19 @@
 * See https://www.hca.wa.gov/assets/billers-and-providers/billing-for-COVID-CPC-03-2020.pdf
 
 
-### New codes
+## New codes
 
-#### ICD-10 for or diagnosis recording
+### ICD-10 for or diagnosis recording
 * An emergency ICD-10 code of U07.1 is assigned to the disease diagnosis of COVID-19
 * See https://www.who.int/classifications/icd/covid19/en/
 
-#### HCPCS
+### HCPCS
 * U0001 for CDC testing laboratories to test patients for SARS-CoV-2
 * HCPCS for non-CDC laboratory tests for SARS-CoV-2/2019-nCoV (COVID-19)
 * Take affect by April 1, however retroactive claims will be accepted from February 4th forward.
 * See https://www.cms.gov/newsroom/press-releases/cms-develops-additional-code-coronavirus-lab-tests
 
-#### LOINC for assay identification
+### LOINC for assay identification
 * The following are pre-release and may change in the release. See https://loinc.org/prerelease/
 * Orderable panel: 2019 Novel Coronavirus RNA panel – Unspecified specimen by NAA with probe detection (NAA= nucleic acid amplification (LOINC code 94306-8). This panel includes the following components
   * 2019 Novel Coronavirus N Gene:PrThr:Pt:XXX:Ord:Probe.amp.tar.primer-probe set N1 (LOINC code 94307-6)
@@ -41,6 +41,6 @@
   * 2019 Novel Coronavirus N gene:PrThr:Pt:XXX:ord:Probe.amp.tar (LOINC code 94316-7)
   * 2019 Novel Coronavirus E gene:PrThr:Pt:XXX:ord:Probe.amp.tar (LOINC code 94315-9)
 
-#### SNOMED CT for the microorganism entities
+### SNOMED CT for the microorganism entities
 * March 2020 release contains relevant COVID-19 concepts (24 records)
 * See http://www.snomed.org/news-and-events/articles/march-2020-interim-snomedct-release-COVID-19
