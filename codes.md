@@ -50,3 +50,10 @@
 ### SNOMED CT for the microorganism entities
 * March 2020 release contains relevant COVID-19 concepts (24 records)
 * See http://www.snomed.org/news-and-events/articles/march-2020-interim-snomedct-release-COVID-19
+
+### Queries using new codes (broken down by day)
+* Count of patients with:
+* ICD-10 U07.1 OR 
+* OR HCPCS U0001 OR U0002 
+* OR LOINC 94306-8 (lab orders)
+* OR LOINC 94307-6 OR 94308-4 OR 94309-2 OR 94310-0 OR 94311-8 OR 94312-6 OR 94313-4 OR 94314-2 OR 94316-7 OR 94315-9
