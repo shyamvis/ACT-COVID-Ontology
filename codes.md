@@ -39,18 +39,14 @@
 
 ### LOINC for assay identification
 * The following are pre-release and may change in the actual release. 
-* See https://loinc.org/prerelease/ and https://loinc.org/sars-coronavirus-2/
-* Orderable panel: 2019 Novel Coronavirus RNA panel – Unspecified specimen by NAA with probe detection (NAA= nucleic acid amplification (LOINC code 94306-8). This panel includes the following components
-  * 2019 Novel Coronavirus N Gene:PrThr:Pt:XXX:Ord:Probe.amp.tar.primer-probe set N1 (LOINC code 94307-6)
-  * 2019 Novel Coronavirus N gene:PrThr:Pt:XXX:Ord:Probe.amp.tar.primer-probe set N2 (LOINC code 94308-4)
-  * 2019 Novel Coronavirus RNA:Imp:Pt:XXX:Ord:Probe.amp.tar (LOINC code 94309-2)
-  * SARS-like Coronavirus N gene:PrThr:Pt:XXX:Ord:Probe.amp.tar (LOINC code 94310-0)
-  * 2019 Novel Coronavirus N gene:ThreshNum:Pt:XXX:Qn:Probe.amp.tar.preimer-probe set N1 (LOINC code 94311-8)
-  * 2019 Novel Coronavirus N gene:ThreshNum:Pt:XXX:Qn:Probe.amp.tar.preimer-probe set N2 (LOINC code 94312-6)
-  * SARS-like Coronavirus N gene:ThreshNum:Pt:XXX:Qn:Probe.amp.tar (LOINC code 94313-4)
-  * 2019 Novel Coronavirus RdRp gene:PrThr:Pt:XXX:ord:Probe.amp.tar (LOINC code 94314-2)
-  * 2019 Novel Coronavirus N gene:PrThr:Pt:XXX:ord:Probe.amp.tar (LOINC code 94316-7)
-  * 2019 Novel Coronavirus E gene:PrThr:Pt:XXX:ord:Probe.amp.tar (LOINC code 94315-9)
+* See https://loinc.org/sars-coronavirus-2/
+* LOINC panel codes (for orders only)
+  * RT-PCR test LOINC 94531-1 (respiratory specimens)
+  * RT-PCR test LOINC 94306-8 (unspecified specimens)
+  * IgG and IgM antibody (serology) test LOINC 94503-0 (qualitative results)
+  * IgG and IgM antibody (serology) test LOINC 94504-8 (quantitative results)
+* Tests looking for the SARS-CoV-2 nucleic acids (RNA) see https://loinc.org/sars-coronavirus-2/
+* Tests looking for antibodies to SARS-CoV-2 see https://loinc.org/sars-coronavirus-2/
 
 ### SNOMED CT for the microorganism entities
 * March 2020 release contains relevant COVID-19 concepts (24 records)
