@@ -27,6 +27,10 @@
 * An emergency ICD-10 code of U07.1 is assigned to the disease diagnosis of COVID-19
 * See https://www.who.int/classifications/icd/covid19/en/
 
+### CPT
+* 87635 Infectious agent detection by nucleic acid (DNA or RNA); severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2 (Coronavirus disease [COVID-19]), amplified probe technique
+* https://www.ama-assn.org/press-center/press-releases/new-cpt-code-announced-report-novel-coronavirus-test
+
 ### HCPCS
 * U0001 for CDC testing laboratories to test patients for SARS-CoV-2
 * U0002 for non-CDC laboratory tests for SARS-CoV-2/2019-nCoV (COVID-19)
@@ -34,7 +38,8 @@
 * See https://www.cms.gov/newsroom/press-releases/cms-develops-additional-code-coronavirus-lab-tests
 
 ### LOINC for assay identification
-* The following are pre-release and may change in the actual release. See https://loinc.org/prerelease/
+* The following are pre-release and may change in the actual release. 
+* See https://loinc.org/prerelease/ and https://loinc.org/sars-coronavirus-2/
 * Orderable panel: 2019 Novel Coronavirus RNA panel – Unspecified specimen by NAA with probe detection (NAA= nucleic acid amplification (LOINC code 94306-8). This panel includes the following components
   * 2019 Novel Coronavirus N Gene:PrThr:Pt:XXX:Ord:Probe.amp.tar.primer-probe set N1 (LOINC code 94307-6)
   * 2019 Novel Coronavirus N gene:PrThr:Pt:XXX:Ord:Probe.amp.tar.primer-probe set N2 (LOINC code 94308-4)
@@ -49,7 +54,7 @@
 
 ### SNOMED CT for the microorganism entities
 * March 2020 release contains relevant COVID-19 concepts (24 records)
-* See http://www.snomed.org/news-and-events/articles/march-2020-interim-snomedct-release-COVID-19
+* See https://confluence.ihtsdotools.org/display/snomed/SNOMED%2BCT%2BCoronavirus%2BContent
 
 ### Queries using new codes (broken down by day)
 * Count of patients with:
