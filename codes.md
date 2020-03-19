@@ -6,7 +6,7 @@
 * **Respiratory infection due to COVID-19:** J98.8 Other specified respiratory disorders & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Acute Bronchitis confirmed as due to COVID-19:** J20.8 Acute bronchitis due to other specified organisms & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Bronchitis not otherwise specified (NOS) due to the COVID-19:** J40 Bronchitis, not specified as acute or chronic & B97.29 Other coronavirus as the cause of diseases classified elsewhere
-* **Acute respiratory distress syndrome (ARDS) due to COVID-19:** J80, Acute respiratory distress syndrome & B97.29 Other coronavirus as the cause of diseases classified elsewhere
+* **Acute respiratory distress syndrome (ARDS) due to COVID-19:** J80 Acute respiratory distress syndrome & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **An actual exposure to someone who is confirmed to have COVID-19:** Z20.828 Contact with and (suspected) exposure to other viral communicable diseases & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Concern about a possible exposure to COVID-19, but this is ruled out after evaluation:** Z03.818 Encounter for observation for suspected exposure to other biological agents ruled out & B97.29 Other coronavirus as the cause of diseases classified elsewhere
 * **Signs/symptoms (such as fever, etc.) but definitive diagnosis has not been established:** R05 Cough, R06.02 Shortness of breath, R50.9 Fever, unspecified
