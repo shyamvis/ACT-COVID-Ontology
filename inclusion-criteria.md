@@ -21,7 +21,8 @@ Lab orders (LOINC)
 94504-8
 
 Lab results (LOINC)
-94500-6
+[94500-6] (https://loinc.org/94500-6/)
+
 94533-7
 94534-5
 94532-9
