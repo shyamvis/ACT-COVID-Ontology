@@ -1,4 +1,4 @@
-##Inclusion cirteria
+### Inclusion criteria
 
 A patient with any one of these codes should be included in the COVID-19 patient set
 
