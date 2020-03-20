@@ -1,6 +1,8 @@
 ### Inclusion criteria
 
-A patient with any one of these codes should be included in the COVID-19 patient set
+A patient with one or more of these codes
+
+ICD-10 code of B97.29 (Other coronavirus as the cause of diseases classified elsewhere) on or after 01/01/2020
 
 ICD-10
 U07.1
