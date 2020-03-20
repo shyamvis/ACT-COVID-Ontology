@@ -1,7 +1,8 @@
 # covid-phenotyping
 Computable phenotyping for Covid-19
 * For codes see https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
-* Google drive https://docs.google.com/spreadsheets/d/1Xyu8tb9P8pLmZqtR9GRyTjPsmmho4jAt/edit#gid=1653851273
+* For the ontology see https://docs.google.com/spreadsheets/d/1Xyu8tb9P8pLmZqtR9GRyTjPsmmho4jAt/edit#gid=1653851273
+* For selection criteria see https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
 
 Misc.
 * CDC Case Report Form https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf
