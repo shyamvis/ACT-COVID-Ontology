@@ -8,3 +8,4 @@ Misc.
 * CDC Case Report Form https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf
 * OHDSI Novel vocabulary for COVID-19 https://github.com/OHDSI/Covid-19/wiki/Novel-vocabulary-for-COVID-19
 * Data from Italy https://github.com/pcm-dpc/COVID-19
+* Liang WH, Ou CQ, He JX, Liu L, Shan H, Lei CL, Hui DS, Du B. Clinical characteristics of coronavirus disease 2019 in China. New England Journal of Medicine. 2020 Feb 28. https://www.nejm.org/doi/full/10.1056/NEJMoa2002032
