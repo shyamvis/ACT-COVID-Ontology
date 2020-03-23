@@ -1,6 +1,6 @@
 ### Inclusion criteria
 
-A patient with one or more of these codes
+A patient with one or more of these codes:
 
 ICD-10 B97.29 (Other coronavirus as the cause of diseases classified elsewhere) on or after 01/01/2020
 
