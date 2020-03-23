@@ -6,6 +6,7 @@ Computable phenotyping for Covid-19
 * For selection criteria see https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
 
 Misc.
+* WHO case definitions https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200310-sitrep-50-covid-19.pdf?sfvrsn=55e904fb_2
 * CDC Case Report Form https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf
 * OHDSI Novel vocabulary for COVID-19 https://github.com/OHDSI/Covid-19/wiki/Novel-vocabulary-for-COVID-19
 * Data from Italy https://github.com/pcm-dpc/COVID-19
