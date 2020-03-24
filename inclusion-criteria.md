@@ -22,27 +22,27 @@ A patient with one or more of these codes:
 * 94504-8 - SARS coronavirus 2 Ab.IgG & IgM panel (quantitative results)
 
 #### LOINC (results)
-94500-6,
-94533-7,
-94534-5,
-94532-9,
-94502-2,
-94309-2,
-94316-7,
-94307-6,
-94308-4,
-94510-5,
-94311-8,
-94312-6,
-94315-9,
-94509-7,
-94314-2,
-94511-3,
-94310-0,
-94313-4,
-94507-1,
-94505-5,
-94508-9,
-94506-3,
-94547-7
+* 94500-6 - SARS coronavirus 2 RNA (qualitative) (Respiratory specimen)
+* 94533-7 - SARS coronavirus 2 N gene (qualitative) (Respiratory specimen)
+* 94534-5 - SARS coronavirus 2 RdRp gene (qualitative) (Respiratory specimen)
+* 94532-9 - SARS-related coronavirus + MERS coronavirus RNA (qualitative) (Respiratory specimen)
+* 94502-2 - SARS-related coronavirus RNA (qualitative) (Respiratory specimen)
+* 94309-2 - SARS coronavirus 2 RNA (qualitative) (Unspecified specimen)
+* 94316-7 - SARS coronavirus 2 N gene (qualitative) (Unspecified specimen)
+* 94307-6 - SARS coronavirus 2 N gene (qualitative, CDC primer-probe set N1) (Unspecified specimen)
+* 94308-4 - SARS coronavirus 2 N gene (qualitative, CDC primer-probe set N2) (Unspecified specimen)
+* 94510-5 - SARS coronavirus 2 N gene (quantitative) (Unspecified specimen)
+* 94311-8 - SARS coronavirus 2 N gene (quantitative, CDC primer-probe set N1) (Unspecified specimen)
+* 94312-6 - SARS coronavirus 2 N gene (quantitative, CDC primer-probe set N2) (Unspecified specimen)
+* 94315-9 - SARS coronavirus 2 E gene (qualitative) (Unspecified specimen)
+* 94509-7 - SARS coronavirus 2 E gene (quantitative) (Unspecified specimen)
+* 94314-2 - SARS coronavirus 2 RdRp gene (qualitative) (Unspecified specimen)
+* 94511-3 - SARS coronavirus 2 ORF1ab region (quantitative) (Unspecified specimen)
+* 94310-0 - SARS-like coronavirus N gene (qualitative) (Unspecified specimen)
+* 94313-4 - SARS-like coronavirus N gene (quantitative) (Unspecified specimen)
+* 94507-1 - SARS coronavirus 2 Ab.IgG (qualitative) (Serum or Plasma)
+* 94505-5 - SARS coronavirus 2 Ab.IgG (quantitative) (Serum or Plasma)
+* 94508-9 - SARS coronavirus 2 Ab.IgM (qualitative) (Serum or Plasma)
+* 94506-3 - SARS coronavirus 2 Ab.IgM (quantitative) (Serum or Plasma)
+* 94547-7 - SARS coronavirus 2 Ab.IgG+IgM (qualitative) (Serum or Plasma)
 
