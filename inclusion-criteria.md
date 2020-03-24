@@ -15,13 +15,13 @@ A patient with one or more of these codes:
 * U0001 – Coronavirus testing using the Centers for Disease Control and Prevention (CDC) 2019 Novel Coronavirus Real Time RT-PCR Diagnostic Test Panel
 * U0002 – Validated non-CDC laboratory tests for SARS-CoV-2/2019-nCoV (COVID-19)
 
-Lab orders (LOINC)
-94531-1, 
-94306-8,
-94503-0,
-94504-8
+#### LOINC (orders)
+* 94531-1 - SARS coronavirus 2 RNA panel (respiratory specimens)
+* 94306-8 - SARS coronavirus 2 RNA panel (unspecified specimens)
+* 94503-0 - SARS coronavirus 2 Ab.IgG & IgM panel (qualitative results)
+* 94504-8 - SARS coronavirus 2 Ab.IgG & IgM panel (quantitative results)
 
-Lab results (LOINC)
+#### LOINC (results)
 94500-6,
 94533-7,
 94534-5,
