@@ -2,8 +2,8 @@
 
 A patient with one or more of these codes:
 
-ICD-10 B97.29 (Other coronavirus as the cause of diseases classified elsewhere) on or after 01/01/2020
-ICD-10 B97.21 (SARS-associated coronavirus as the cause of diseases classified elsewhere) on or after 01/01/2020
+ICD-10 B97.29 (Other coronavirus as the cause of diseases classified elsewhere) recorded on or after 01/01/2020
+ICD-10 B97.21 (SARS-associated coronavirus as the cause of diseases classified elsewhere) recorded on or after 01/01/2020
 
 
 ICD-10 U07.1
