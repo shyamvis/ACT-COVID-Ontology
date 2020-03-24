@@ -2,15 +2,18 @@
 
 A patient with one or more of these codes:
 
-ICD-10 B97.29 (Other coronavirus as the cause of diseases classified elsewhere) recorded on or after 01/01/2020,
-ICD-10 B97.21 (SARS-associated coronavirus as the cause of diseases classified elsewhere) recorded on or after 01/01/2020
+#### ICD-10-CM
+* B97.29 - Other coronavirus as the cause of diseases classified elsewhere (recorded on or after 01/01/2020)
+* B97.21 - SARS-associated coronavirus as the cause of diseases classified elsewhere (recorded on or after 01/01/2020)
+* U07.1 - 2019-nCoV acute respiratory disease
 
+#### CPT-4
 
-ICD-10 U07.1
+* 87635 – Infectious agent detection by nucleic acid (DNA or RNA); severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Coronavirus disease (COVID-19)), amplified probe technique
 
-CPT 87635
-
-HCPCS U0001, U0002
+#### HCPCS
+* U0001 – Coronavirus testing using the Centers for Disease Control and Prevention (CDC) 2019 Novel Coronavirus Real Time RT-PCR Diagnostic Test Panel
+* U0002 – Validated non-CDC laboratory tests for SARS-CoV-2/2019-nCoV (COVID-19)
 
 Lab orders (LOINC)
 94531-1, 
