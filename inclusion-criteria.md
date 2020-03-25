@@ -1,4 +1,4 @@
-### Inclusion criteria fro ACT COVID-19 data mart
+### Inclusion criteria for ACT COVID-19 data mart
 
 A patient with one or more of these codes:
 
