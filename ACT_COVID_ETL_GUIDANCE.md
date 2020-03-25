@@ -1,4 +1,4 @@
-# ACT COVI19 Ontology ETL Guidance
+# ACT COVI19 Ontology ETL Guidance (in process)
 ## Diagnosis
 No special instructions
 Codes of interest:
