@@ -1,6 +1,6 @@
 * Create tables for COVID ontology in i2b2 metadata schema and in the SHRINE_ONT schema. Use ACT_COVID.ddl
-* Import covid ontology into both new ACT_COVID ontology tables using the ACT_COVID_032320.csv file. The delimiter is a semi-colon (;). The Data Goes in your existing TABLE_ACCESS.
-* Import new table access row in both i2b2_metadata schema and in the SHRINE_ONT schema. Use ACT_COVID_TABLE_ACCESS.csv
+* Import covid ontology into both new ACT_COVID ontology tables using the ACT_COVID_032320.csv file. The delimiter is a semi-colon (;). 
+* Import new table access row in both i2b2_metadata schema and in the SHRINE_ONT schema. Use ACT_COVID_TABLE_ACCESS.csv The Data Goes in your existing TABLE_ACCESS.
 * Import new concepts to your concept_dimension table using ACT_COVID_CONCEPT_DIMENSION.csv. The delimiter is a semi-colon (;). 
 * Modifiy this file as necessary to map local terms to the ACT COVID Ontology.
 * Update SHRINE AdapterMapping file. Included (coming soon) are complete AdapterMappingCovidAll.csv 
