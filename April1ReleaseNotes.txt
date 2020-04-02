@@ -1,0 +1,14 @@
+Add c_basecode to Laboratory Testing to map tests with unmap-able result values
+Fix LOINC and path for 94510-5 to remove 94310-5
+Fix c_basecodes for ANY Negative and ANY Positive
+Change all ANY* to folder with corresponding LOINCs as children - Children are hidden
+Fix path for Symptoms indicating suspected case and children - the code was missing a 4 was UMLS_C078147 is UMLS_C0478147
+Fix Therapeutic and Preventive Treatment basecode
+Fix Hydroxychloroquine basecode was equal to Chloroquine
+Fix c_dimcode for Remdesivir to match c_fullname
+Fix c_dimcode for Tocilizumab to match c_fullname
+Hide Vaccination
+Regenerate new adapter mapping
+Regenerate concept dimension
+create sqlserver script
+create oracle script ( set define off)
