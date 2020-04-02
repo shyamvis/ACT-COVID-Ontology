@@ -4,6 +4,9 @@ Computable phenotyping for Covid-19
 * For the ontology see https://docs.google.com/spreadsheets/d/1Xyu8tb9P8pLmZqtR9GRyTjPsmmho4jAt/edit#gid=1653851273
 * and in the i2b2 at http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (password not required)
 * For selection criteria see https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
+* Acceptance test queries https://docs.google.com/spreadsheets/d/11LGtIdXAFoKMS0ARw4wjSK7VgmTyUiiemr3T8o0YfN4/edit#gid=692068358
+* Google sheet for test sites https://docs.google.com/spreadsheets/d/1gqDP6TBzweU23dwF9EPcmXHsfXtBwaHzprifHjSzEC8/edit#gid=0
+
 
 Misc.
 * WHO case definitions https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200310-sitrep-50-covid-19.pdf?sfvrsn=55e904fb_2
