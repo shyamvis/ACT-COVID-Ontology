@@ -1,8 +1,7 @@
 # covid-phenotyping
 Computable phenotyping for Covid-19
 * For codes see https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
-* For the ontology see https://docs.google.com/spreadsheets/d/1Xyu8tb9P8pLmZqtR9GRyTjPsmmho4jAt/edit#gid=1653851273
-* and in the i2b2 at http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (password not required)
+* For the ontology in i2b2 see http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (password not required)
 * For selection criteria see https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
 * Acceptance test queries https://docs.google.com/spreadsheets/d/11LGtIdXAFoKMS0ARw4wjSK7VgmTyUiiemr3T8o0YfN4/edit#gid=692068358
 * Google sheet for test sites https://docs.google.com/spreadsheets/d/1gqDP6TBzweU23dwF9EPcmXHsfXtBwaHzprifHjSzEC8/edit#gid=0
