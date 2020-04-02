@@ -1,6 +1,6 @@
 # covid-phenotyping
-Computable phenotyping for Covid-19
-* For codes see https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
+Computable phenotyping for COVID-19
+* For ICD10, CPT, HCPCS, LOINC codes see https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
 * For the ontology in i2b2 see http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (password not required)
 * For selection criteria see https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
 * Acceptance test queries https://docs.google.com/spreadsheets/d/11LGtIdXAFoKMS0ARw4wjSK7VgmTyUiiemr3T8o0YfN4/edit#gid=692068358
