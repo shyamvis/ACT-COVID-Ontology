@@ -1,4 +1,4 @@
-### Inclusion criteria for ACT COVID-19 data mart
+### Inclusion criteria for ACT COVID-19 data mart (refresh twice weekly on Mondays and Thrusdays)
 
 A patient with one or more of these codes:
 
