@@ -11,4 +11,5 @@ Misc.
 * WHO case definitions https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200310-sitrep-50-covid-19.pdf?sfvrsn=55e904fb_2
 * CDC Case Report Form https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf
 * OHDSI Novel vocabulary for COVID-19 https://github.com/OHDSI/Covid-19/wiki/Novel-vocabulary-for-COVID-19
+* Wuhan Clinical Course and Risk paper https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30566-3/fulltext
 
