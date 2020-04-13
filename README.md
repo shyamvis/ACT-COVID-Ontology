@@ -11,6 +11,7 @@
 * [Clinical characteristics of coronavirus disease 2019 in China](https://www.nejm.org/doi/full/10.1056/NEJMoa2002032)
 * [Clinical Characteristics of Patients Who Died of Coronavirus Disease 2019 in China](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2764293)
 
+### Other papers
 * [Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
 * [Characteristics and Outcomes of 21 Critically Ill Patients With COVID-19 in Washington State](https://jamanetwork.com/journals/jama/fullarticle/2763485)
 * [Covid-19 in Critically Ill Patients in the Seattle Region — Case Series](https://www.nejm.org/doi/full/10.1056/NEJMoa2004500)
