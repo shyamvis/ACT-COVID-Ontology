@@ -8,11 +8,12 @@
 
 ### Papers
 * [Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30566-3/fulltext)
-* [Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
 * [Clinical characteristics of coronavirus disease 2019 in China](https://www.nejm.org/doi/full/10.1056/NEJMoa2002032)
+* [Clinical Characteristics of Patients Who Died of Coronavirus Disease 2019 in China](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2764293)
+
+* [Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
 * [Characteristics and Outcomes of 21 Critically Ill Patients With COVID-19 in Washington State](https://jamanetwork.com/journals/jama/fullarticle/2763485)
 * [Covid-19 in Critically Ill Patients in the Seattle Region — Case Series](https://www.nejm.org/doi/full/10.1056/NEJMoa2004500)
-* [Clinical Characteristics of Patients Who Died of Coronavirus Disease 2019 in China](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2764293)
 * [Baseline Characteristics and Outcomes of 1591 Patients Infected With SARS-CoV-2 Admitted to ICUs of the Lombardy Region, Italy](https://jamanetwork.com/journals/jama/fullarticle/2764365)
 
 ### Misc.
