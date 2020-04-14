@@ -16,6 +16,7 @@
 * [Characteristics and Outcomes of 21 Critically Ill Patients With COVID-19 in Washington State](https://jamanetwork.com/journals/jama/fullarticle/2763485)
 * [Covid-19 in Critically Ill Patients in the Seattle Region — Case Series](https://www.nejm.org/doi/full/10.1056/NEJMoa2004500)
 * [Baseline Characteristics and Outcomes of 1591 Patients Infected With SARS-CoV-2 Admitted to ICUs of the Lombardy Region, Italy](https://jamanetwork.com/journals/jama/fullarticle/2764365)
+* [Pharmacologic Treatments for Coronavirus Disease 2019 (COVID-19) A Review](https://jamanetwork.com/journals/jama/fullarticle/2764727)
 
 ### Misc.
 * WHO case definitions https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200310-sitrep-50-covid-19.pdf?sfvrsn=55e904fb_2
