@@ -5,12 +5,12 @@
 * Inclusion criteria for ACT COVID cohort - https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
 * Acceptance test queries - https://docs.google.com/spreadsheets/d/11LGtIdXAFoKMS0ARw4wjSK7VgmTyUiiemr3T8o0YfN4/edit#gid=692068358
 * Google sheet for test sites - https://docs.google.com/spreadsheets/d/1gqDP6TBzweU23dwF9EPcmXHsfXtBwaHzprifHjSzEC8/edit#gid=0
-* COVID-19 related codes (ICD10, CPT, HCPCS, LOINC, etc) - https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
+* COVID-19 related codes (ICD-10-CM, CPT4, HCPCS, LOINC, etc.) - https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
 
 ### COVID coding resoruces
 * COVID-19 case definitions from CDC - https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/
-* ICD-10-CM coding and reporting guidelines - https://www.cdc.gov/nchs/data/icd/COVID-19-guidelines-final.pdf
-* CPT COVID-19 coding and guidance - https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance
+* ICD-10-CM COVID-19 coding and reporting guidelines - https://www.cdc.gov/nchs/data/icd/COVID-19-guidelines-final.pdf
+* CPT4 COVID-19 coding and guidance - https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance
 * LOINC COVID-19 Prerelease Terms - https://loinc.org/prerelease/
 
 ### N3C
