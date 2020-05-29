@@ -10,3 +10,9 @@ create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;
 INSERT into CONCEPT_DIMENSION
 SELECT c_fullname concept_path, to_char(c_basecode) concept_cd, c_name name_char, CAST( NULL AS VARCHAR2(50) ) concept_blob, sysdate update_date, sysdate download_date, sysdate import_date, 'ACT' sourcesystem_cd, 20200501 upload_id
 from ACT_COVID where c_synonym_cd = 'N' and c_basecode is not null and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension'
+
+
+
+
+Any Intellectual Property derived from use of the ACT Network please cite the NCATS ACT grant: “This project was supported by the National Institutes of Health through grant UL1TR000005.” 
+
