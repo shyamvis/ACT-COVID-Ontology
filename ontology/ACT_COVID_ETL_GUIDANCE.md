@@ -18,7 +18,20 @@ concept_cd, value_type_cd, tval_char, nval_num, valueflag_cd, units_cd
 LOINC:94309-2,T,DETEC,,,
 LOINC:94309-2 POSITIVE,T,DETEC,,,
 
-If your site does not use any of the LOINC codes in COVID19Codes.xsls please map patient COVID status using the four derived lab result facts (ANY Negative, ANY Positive, ANY Equivocal, ANY Pending).This information can come from local codes, extraction from patient notes, etc. 
+If your site does not use any of the LOINC codes in COVID19Codes.xsls please map patient COVID status using the eight derived lab result facts (ANY Negative, ANY Positive, ANY Equivocal, ANY Pending).This information can come from local codes, extraction from patient notes, etc. 
+
+Diagnositic Lab Tests have been separated into Antibody and Nucleic Acid testing. This change requires *new* mappings. The existing derived 'ANY' lab test will now only represent nucleic acid testing. Antibody tests should be map to new codes (below).  If you are mapping directly to the 'ANY Lab POSITIVE', etc You will need to determine if the tests you are mapping are nucleic acid tests or antibody tests and remap. If you are mapping to specific LOINCs no change will be necessary. 
+
+**New codes are:**
+```
+ANY Antibody Lab Test Equivocal	            ACT|LOCAL|LAB:ANY EQUIVOCAL ANTIBODY TEST
+ANY Antibody Lab Test Negative	            ACT|LOCAL|LAB:ANY NEGATIVE ANTIBODY TEST
+ANY Antibody Lab Test Pending               ACT|LOCAL|LAB:ANY PENDING ANTIBODY TEST
+ANY Antibody Lab Test Positive	            ACT|LOCAL|LAB:ANY POSITIVE ANTIBODY TEST
+ANY Nucleic Acid Lab Test Negative          UMLS:C1334932
+ANY Nucleic Acid Lab Test Positive          UMLS:C1335447
+ANY Nucleic Acid Lab Test Pending           UMLS:C1611271
+ANY Nucleic Acid Lab Test Equivocal         UMLS:C4303880
 
 Example for patients with a positive diagnosis:
 concept_cd, value_type_cd, tval_char, nval_num, valueflag_cd, units_cd 
