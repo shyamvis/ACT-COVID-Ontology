@@ -1,26 +1,18 @@
-# covid-phenotyping
-### ACT related COVID-19 links
-* For ICD10, CPT, HCPCS, LOINC codes see https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
-* For the ontology in i2b2 see http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (login: demo / password: demouser)
-* Inclusion criteria for ACT CVOID-19 cohort see https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
-* Acceptance test queries https://docs.google.com/spreadsheets/d/11LGtIdXAFoKMS0ARw4wjSK7VgmTyUiiemr3T8o0YfN4/edit#gid=692068358
-* Google sheet for test sites https://docs.google.com/spreadsheets/d/1gqDP6TBzweU23dwF9EPcmXHsfXtBwaHzprifHjSzEC8/edit#gid=0
+# ACT-COVID-Ontology
 
-### Papers
-* [Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30566-3/fulltext)
-* [Clinical characteristics of coronavirus disease 2019 in China](https://www.nejm.org/doi/full/10.1056/NEJMoa2002032)
-* [Clinical Characteristics of Patients Who Died of Coronavirus Disease 2019 in China](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2764293)
+### ACT COVID resources
+* ACT CVOID ontology in i2b2 - http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (login: demo / password: demouser)
+* Inclusion criteria for ACT COVID cohort - https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
+* Acceptance test queries - https://docs.google.com/spreadsheets/d/11LGtIdXAFoKMS0ARw4wjSK7VgmTyUiiemr3T8o0YfN4/edit#gid=692068358
+* Google sheet for test sites - https://docs.google.com/spreadsheets/d/1gqDP6TBzweU23dwF9EPcmXHsfXtBwaHzprifHjSzEC8/edit#gid=0
+* COVID-19 related codes (ICD-10-CM, CPT4, HCPCS, LOINC, etc.) - https://github.com/shyamvis/covid-phenotyping/blob/master/codes.md
 
-### Other papers
-* [Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
-* [Characteristics and Outcomes of 21 Critically Ill Patients With COVID-19 in Washington State](https://jamanetwork.com/journals/jama/fullarticle/2763485)
-* [Covid-19 in Critically Ill Patients in the Seattle Region — Case Series](https://www.nejm.org/doi/full/10.1056/NEJMoa2004500)
-* [Baseline Characteristics and Outcomes of 1591 Patients Infected With SARS-CoV-2 Admitted to ICUs of the Lombardy Region, Italy](https://jamanetwork.com/journals/jama/fullarticle/2764365)
-* [Pharmacologic Treatments for Coronavirus Disease 2019 (COVID-19) A Review](https://jamanetwork.com/journals/jama/fullarticle/2764727)
+### COVID coding resoruces
+* COVID-19 case definitions from CDC - https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/
+* ICD-10-CM COVID-19 coding and reporting guidelines - https://www.cdc.gov/nchs/data/icd/COVID-19-guidelines-final.pdf
+* CPT4 COVID-19 coding and guidance - https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance
+* LOINC COVID-19 Prerelease Terms - https://loinc.org/prerelease/
 
-### Misc.
-* WHO case definitions https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200310-sitrep-50-covid-19.pdf?sfvrsn=55e904fb_2
-* CDC Case Report Form https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf
-* OHDSI Novel vocabulary for COVID-19 https://github.com/OHDSI/Covid-19/wiki/Novel-vocabulary-for-COVID-19
-
-
+### N3C
+* N3C Phenotype & Data Acquisition Workstream - https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition
+* Inclusion criteria for N3C CVOID-19 patients - https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype

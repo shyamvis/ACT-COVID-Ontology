@@ -1,4 +1,4 @@
-### Inclusion criteria for ACT COVID-19 cohort
+### Inclusion criteria for ACT COVID cohort
 
 A patient with one or more of these codes:
 
