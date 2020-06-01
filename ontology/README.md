@@ -33,9 +33,14 @@ Due to file size the ontology data files are now contained in a zip file.
 
 ```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
 
-2. Load ACT_COVID table using ACT_COVID_i2b2_<rdb>.sql or ACT_COVID_V3.dsv (pipe delimited everything quoted) file
-3. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv
-4. Add rows to CONCEPT_DIMENSION table (in CRC schema) using:
+2. Create ACT_COVID table using ACT_COVID.ddl or copy an existing ontology table from shrine_ont schema
+
+```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
+
+3. Load ACT_COVID table usingfiles contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_<rdb>.sql or ACT_COVID_V3.dsv (pipe delimited everything quoted) file.
+4. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv
+5. Add rows to CONCEPT_DIMENSION table (in CRC schema) using:
+
 ```
 INSERT into CONCEPT_DIMENSION
 SELECT 
@@ -45,12 +50,15 @@ SELECT
   CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
 FROM ACT_COVID 
 WHERE c_synonym_cd = 'N' and c_basecode is not null 
-  and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension'
+  and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension';
 ```
-5. Install new AdapterMappingCovidAllMay31.csv file in /opt/shrine/tomcat/lib make sure filename matches the name referenced in shrine.conf
+6. Install new AdapterMappingCovidAllMay31.csv file in /opt/shrine/tomcat/lib make sure filename matches the name referenced in shrine.conf
   
   ```adapterMappingsFileName = "AdapterMappingCovidAllMay31.csv"```
-  
+ 
+ 7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
+ 8. Restart shrine
+ 
 ---
 
 ***Update Install***
@@ -79,7 +87,8 @@ WHERE c_synonym_cd = 'N' and c_basecode is not null
   
   ```adapterMappingsFileName = "AdapterMappingCovidAllMay31.csv"```
 
-
+7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
+8. Restart shrine
 
 
 
