@@ -57,7 +57,7 @@ WHERE c_synonym_cd = 'N' and c_basecode is not null
   ```adapterMappingsFileName = "AdapterMappingCovidAllMay31.csv"```
  
  7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
- 8. Restart shrine
+ 8. Restart SHRINE
  
 ---
 
@@ -88,9 +88,8 @@ WHERE c_synonym_cd = 'N' and c_basecode is not null
   ```adapterMappingsFileName = "AdapterMappingCovidAllMay31.csv"```
 
 7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
-8. Restart shrine
+8. Restart SHRINE
 
 
-
-Any Intellectual Property derived from use of the ACT Network please cite the NCATS ACT grant: “This project was supported by the National Institutes of Health through grant UL1TR000005.” 
+For any publications or any intellectual property derived from use of the ACT Network please cite the NCATS ACT grant: “This work was supported by the National Center for Advancing Translational Sciences of the National Institutes of Health under grant numbers UL1 TR000005."
 
