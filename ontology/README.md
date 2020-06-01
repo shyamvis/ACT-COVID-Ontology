@@ -3,7 +3,7 @@
 
 **Major Ontology Restructuring**
 
-Diagnositic Lab Tests have been separated into Antibody and Nucleic Acid testing. This change requires *new* mappings. The existing derived 'ANY' lab tesst will now only represent nucleic acid testing. Antibody tests should be map to new codes (below).  If you are mapping directly to the 'ANY Lab POSITIVE', etc You will need to determine if the tests you are mapping are nucleic acid tests or antibody tests and remap. If you are mapping to specific LOINCs no change will be necessary. 
+The 4 derived values for Diagnostic Lab Tests (ANY Positive, ANY Negative, ANY Pending, ANY Equivocal) have been duplicated - one set of values for Nucleic Acid tests and another set of values for Antibody tests. This change requires *new* mappings. The existing derived ANY values currently represent only Diagnostic Lab Tests. Antibody tests should be mapped to a new set of ANY derived values (see below). If you are mapping directly to the 'ANY Positive', etc., you will need to determine if the tests you are mapping are Nucleic Acid tests or Antibody tests and remap. If you are mapping to specific LOINCs no change will be necessary. 
 
 **New codes are:**
 ```
