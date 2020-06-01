@@ -1,5 +1,5 @@
 
-**ACT COVID v3.0**
+**ACT COVID Ontology v3.0**
 
 **Major Ontology Restructuring**
 
