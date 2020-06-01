@@ -5,7 +5,7 @@
 
 The 4 derived values for Diagnostic Lab Tests (ANY Positive, ANY Negative, ANY Pending, ANY Equivocal) have been duplicated - one set of values for Nucleic Acid tests and another set of values for Antibody tests. This change requires *new* mappings. The existing derived ANY values currently represent only Diagnostic Lab Tests. Antibody tests should be mapped to a new set of ANY derived values (see below). If you are mapping directly to the 'ANY Positive', etc., you will need to determine if the tests you are mapping are Nucleic Acid tests or Antibody tests and remap. If you are mapping to specific LOINCs no change will be necessary. 
 
-**New codes are:**
+**New derived Diagnostic Lab Tests values are:**
 ```
 ANY Antibody Lab Test Equivocal	            ACT|LOCAL|LAB:ANY EQUIVOCAL ANTIBODY TEST
 ANY Antibody Lab Test Negative	            ACT|LOCAL|LAB:ANY NEGATIVE ANTIBODY TEST
