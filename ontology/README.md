@@ -19,11 +19,11 @@ ANY Nucleic Acid Lab Test Equivocal         UMLS:C4303880
 
 v3.0 Also includes the following general changes:
 - Added severity of illness including 4CE codes (medications, labs, diagnosis and procedures)
-- Augmented concepts using codes recommended by ACT COVID
-- Added new LOINCs (as of 4 May, 2020)
-- Fixed tooltips
+- Augmented concepts with codes provided from feedback from the Data Harmonization Group members
+- Added new LOINCs (that have been introduced as of 4 May, 2020)
+- Fixed tooltip strings
 
-Due to file size the ontology data files are now contained in a zip file.  
+Due to large file sizes the ontology data files are now contained in a zip file.  
 
 ---
 
