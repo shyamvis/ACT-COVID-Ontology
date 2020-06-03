@@ -39,7 +39,7 @@ Due to large file sizes the ontology data files are now contained in a zip file.
 
 3. Load ACT_COVID table usingfiles contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_<rdb>.sql or ACT_COVID_V3.dsv (pipe delimited everything quoted) file.
 4. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv
-5. Add rows to CONCEPT_DIMENSION table (in CRC schema) using:
+5. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
 
 ```
 INSERT into CONCEPT_DIMENSION
@@ -70,7 +70,7 @@ WHERE c_synonym_cd = 'N' and c_basecode is not null
 ```delete from concept_dimension where concept_path like '\ACT\UMLS_C0031437\%';```
 
 4. Load ACT_COVID table using ACT_COVID_i2b2_<rdb>.sql or ACT_COVID_V3.dsv (pipe delimited everything quoted) file
-5. Add rows to CONCEPT_DIMENSION table (in CRC schema):
+5. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table:
 
 ```
 INSERT into CONCEPT_DIMENSION
