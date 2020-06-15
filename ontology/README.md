@@ -1,11 +1,19 @@
 
 **ACT COVID Ontology v3.0**
 
-**Major Ontology Restructuring**
+The ACT COVID Ontology has been created to support cohort identification and related research. The ontology has been organized to do the following:
+ 
+ 1. Represent terms to support COVID that cannot be found in the existing ACT ontologies. This includes new diagnositic lab LOINCs for COVID-19 testing, COVID related medications that are not in our Medication hierarchies like Remdesivir, and procedures and diagnosis like ICD10CM U07.1 2019-nCOV Acute Respiratory Disease and ventilation related DRGs 475 & 576.  
+2. Organize COVID related concepts regardless of domain into meaningful hierarchies. Example Mechanical Ventilation is represented by a collection of CPTs, ICD10CMs, ICD10PCS, and DRGs and  Level of Care Setting is represented with existing CPTs and Visit dimension elements. 
+3. Create hierarchies that would allow user to more easily query for Course of Illness and disease severity. 
+4. Add Total Patient Count to define the N of each node. This was initially required due to the varying types of datamarts on the Test Network, but should be help for users on the production network as well. This term may be promoted to the Demographics Ontology in the future.
+5. Create ***Derived Fact*** placeholders. These terms are meant to hold non-standard terminology facts that will improve a sites to represent COVID patients. These facts can come from Notes, Flowsheets or elsewhere in your EHR. They may also be a combination of one or more facts within your EHR. Using the Derived terms will allow ACT to harmonize this type of data. Many of these facts use 'ACT|LOCAL' or 'UMLS' namespace/prefixes.
 
-The 4 derived values for Diagnostic Lab Tests (ANY Positive, ANY Negative, ANY Pending, ANY Equivocal) have been duplicated - one set of values for Nucleic Acid tests and another set of values for Antibody tests. This change requires *new* mappings. The existing derived ANY values currently represent only Diagnostic Lab Tests. Antibody tests should be mapped to a new set of ANY derived values (see below). If you are mapping directly to the 'ANY Positive', etc., you will need to determine if the tests you are mapping are Nucleic Acid tests or Antibody tests and remap. If you are mapping to specific LOINCs no change will be necessary. 
+**Diagnostic Lab Tests**
 
-**New derived Diagnostic Lab Tests values are:**
+Diagnositic Lab Tests are separated into Antibody and Nucleic Acid testing. This requires new mappings in your ETL. If you are upgrading from COVID-19 ontology version 2, the previous derived 'ANY' lab test will now only represent nucleic acid testing. Antibody tests should be map to the antibody codes (below). If you are mapping directly to the 'ANY Lab POSITIVE', etc You will need to determine if the tests you are mapping are nucleic acid tests or antibody tests. If you are mapping to specific LOINCs no additional mappings/edits will be necessary.
+
+**Derived Diagnostic Lab Tests values are:**
 ```
 ANY Antibody Lab Test Equivocal	            ACT|LOCAL|LAB:ANY EQUIVOCAL ANTIBODY TEST
 ANY Antibody Lab Test Negative	            ACT|LOCAL|LAB:ANY NEGATIVE ANTIBODY TEST
@@ -16,6 +24,11 @@ ANY Nucleic Acid Lab Test Positive          UMLS:C1335447
 ANY Nucleic Acid Lab Test Pending           UMLS:C1611271
 ANY Nucleic Acid Lab Test Equivocal         UMLS:C4303880
 ```
+
+**Ontology changes for V3**
+
+The 4 derived values for Diagnostic Lab Tests (ANY Positive, ANY Negative, ANY Pending, ANY Equivocal) have been duplicated - one set of values for Nucleic Acid tests and another set of values for Antibody tests. This change requires *new* mappings. The existing derived ANY values currently represent only Diagnostic Lab Tests. Antibody tests should be mapped to a new set of ANY derived values (see below). If you are mapping directly to the 'ANY Positive', etc., you will need to determine if the tests you are mapping are Nucleic Acid tests or Antibody tests and remap. If you are mapping to specific LOINCs no change will be necessary. 
+
 
 v3.0 Also includes the following general changes:
 - Added severity of illness including 4CE codes (medications, labs, diagnosis and procedures)
