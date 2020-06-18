@@ -98,7 +98,7 @@ WHERE c_synonym_cd = 'N' and c_basecode is not null
 ```
 6. Install new AdapterMappingCovidAllMay31.csv file in /opt/shrine/tomcat/lib make sure filename matches the name referenced in shrine.conf
   
-  ```adapterMappingsFileName = "AdapterMappingCovidAllMay31.csv"```
+  ```adapterMappingsFileName = "AdapterMappingCovidAllJun1.csv"```
 
 7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
 8. Restart SHRINE
