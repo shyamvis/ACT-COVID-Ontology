@@ -53,10 +53,14 @@ Due to large file sizes the ontology data files are now contained in a zip file.
 3. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
 4. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv.
 5. Repeat Steps 3 and 4 for the shrine_ont schema.
+    
+    ---
+    _(Steps 6 through 9 are also used for the "Update Install".)_
+    
 6. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
 
     1. _For Oracle/PostgreSQL..._
-    ```
+    ```sql
     INSERT into CONCEPT_DIMENSION
     SELECT 
       c_fullname concept_path, c_basecode concept_cd, 
@@ -68,14 +72,14 @@ Due to large file sizes the ontology data files are now contained in a zip file.
       and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension'
     ```
     2. _For SQL Server..._ (SQL Server may not recognize the `VARCHAR2` datatype nor the `trim()` function)
-    ```
-    INSERT into crcdata.dbo.CONCEPT_DIMENSION
+    ```sql
+    INSERT into <crcdata>.<schema>.CONCEPT_DIMENSION
     SELECT 
       c_fullname concept_path, c_basecode concept_cd, 
       c_name name_char, CAST( NULL AS VARCHAR(50) ) concept_blob, 
       CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
       CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
-    FROM metadata.dbo.ACT_COVID 
+    FROM <metadata>.<schema>.ACT_COVID 
     WHERE c_synonym_cd = 'N' and c_basecode is not null 
       and c_dimcode is not null and RTRIM(LTRIM(lower(c_tablename))) = 'concept_dimension';
     ```
@@ -99,40 +103,10 @@ Due to large file sizes the ontology data files are now contained in a zip file.
 
 4. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
 5. Repeat Step 4 for the shrine_ont schema.
-6. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
+6. to 9.  Please follow Steps 6 through 9 as shown above for the "New Install".
 
-    1. _For Oracle/PostgreSQL..._
-    ```
-    INSERT into CONCEPT_DIMENSION
-    SELECT 
-      c_fullname concept_path, c_basecode concept_cd, 
-      c_name name_char, CAST( NULL AS VARCHAR2(50) ) concept_blob, 
-      CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
-      CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
-    FROM ACT_COVID 
-    WHERE c_synonym_cd = 'N' and c_basecode is not null 
-      and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension'
-    ```
-    2. _For SQL Server..._ (SQL Server may not recognize the `VARCHAR2` datatype nor the `trim()` function)
-    ```
-    INSERT into crcdata.dbo.CONCEPT_DIMENSION
-    SELECT 
-      c_fullname concept_path, c_basecode concept_cd, 
-      c_name name_char, CAST( NULL AS VARCHAR(50) ) concept_blob, 
-      CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
-      CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
-    FROM metadata.dbo.ACT_COVID 
-    WHERE c_synonym_cd = 'N' and c_basecode is not null 
-      and c_dimcode is not null and RTRIM(LTRIM(lower(c_tablename))) = 'concept_dimension';
-    ```
 
-7. Install new `AdapterMappingCovidAllJun1.csv` file in `/opt/shrine/tomcat/lib`, making sure filename matches the name referenced in shrine.conf:
-  
-    ```adapterMappingsFileName = "AdapterMappingCovidAllJun1.csv"```
-
-8. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
-9. Restart SHRINE.
-
+**Citations**
 
 For any publications or any intellectual property derived from use of the ACT Network please cite the NCATS ACT grant: "This work was supported by the National Center for Advancing Translational Sciences of the National Institutes of Health under grant numbers UL1 TR000005."
 
