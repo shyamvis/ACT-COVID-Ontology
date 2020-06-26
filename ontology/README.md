@@ -50,7 +50,7 @@ Due to large file sizes the ontology data files are now contained in a zip file.
 
     ```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
 
-3. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second file DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
+3. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
 4. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv.
 5. Repeat Steps 3 and 4 for the shrine_ont schema.
 6. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
@@ -97,7 +97,7 @@ Due to large file sizes the ontology data files are now contained in a zip file.
 
     ```delete from concept_dimension where concept_path like '\ACT\UMLS_C0031437\%';```
 
-4. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second file DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
+4. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
 5. Repeat Step 4 for the shrine_ont schema.
 6. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
 
