@@ -7,7 +7,7 @@ The ACT COVID Ontology has been created to support cohort identification and rel
 2. Organize COVID related concepts regardless of domain into meaningful hierarchies. Example Mechanical Ventilation is represented by a collection of CPTs, ICD10CMs, ICD10PCS, and DRGs and  Level of Care Setting is represented with existing CPTs and Visit dimension elements. 
 3. Create hierarchies that would allow user to more easily query for Course of Illness and disease severity. 
 4. Add Total Patient Count to define the N of each node. This was initially required due to the varying types of datamarts on the Test Network, but should be helpful to users on the production network as well. This term may be promoted to the Demographics Ontology in the future.
-5. Create ***Derived Fact*** placeholders. These terms are meant to hold non-standard terminology facts that will improve a sites ability to represent COVID patients. These facts can come from Notes, Flowsheets or elsewhere in your EHR. They may also be a combination of one or more facts within your EHR. Using the Derived terms will allow ACT to harmonize this type of data. Many of these facts use 'ACT|LOCAL' or 'UMLS' namespace/prefixes.
+5. Create ***Derived Fact*** placeholders. These terms are meant to hold non-standard terminology facts that will improve a site's ability to represent COVID patients. These facts can come from Notes, Flowsheets or elsewhere in your EHR. They may also be a combination of one or more facts within your EHR. Using the Derived terms will allow ACT to harmonize this type of data. Many of these facts use 'ACT|LOCAL' or 'UMLS' namespace/prefixes.
 
 **Diagnostic Lab Tests**
 
@@ -42,67 +42,71 @@ Due to large file sizes the ontology data files are now contained in a zip file.
 
 ***New Install***
 
-1. Create ACT_COVID table using ACT_COVID.ddl or copy an existing ontology table from metadata schema
+1. Create ACT_COVID table using ACT_COVID.ddl or copy an existing ontology table from metadata schema.
 
-```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
+    ```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
 
-2. Create ACT_COVID table using ACT_COVID.ddl or copy an existing ontology table from shrine_ont schema
+2. Create ACT_COVID table using ACT_COVID.ddl or copy an existing ontology table from shrine_ont schema.
 
-```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
+    ```create table ACT_COVID as select * from NCATS_DEMOGRAPHICS where 1=0;```
 
-3. Load ACT_COVID table usingfiles contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_<rdb>.sql or ACT_COVID_V3.dsv (pipe delimited everything quoted) file. (The second file ACT_COVID_V3D.dsv contains an extra column HPDS_PATH for sites that may be also supporting an HPDS instance)
-4. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv
-5. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
+3. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
+4. Insert ACT_COVID reference into TABLE_ACCESS using ACT_COVID_TABLE_ACCESS.csv.
+5. Repeat Steps 3 and 4 for the shrine_ont schema.
+    
+    ---
+    _(Steps 6 through 9 are also used for the "Update Install".)_
+    
+6. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table using:
 
-```
-INSERT into CONCEPT_DIMENSION
-SELECT 
-  c_fullname concept_path, c_basecode concept_cd, 
-  c_name name_char, CAST( NULL AS VARCHAR2(50) ) concept_blob, 
-  CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
-  CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
-FROM ACT_COVID 
-WHERE c_synonym_cd = 'N' and c_basecode is not null 
-  and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension';
-```
-6. Install new AdapterMappingCovidAllMay31.csv file in /opt/shrine/tomcat/lib make sure filename matches the name referenced in shrine.conf
+    1. _For Oracle/PostgreSQL..._
+    ```sql
+    INSERT into CONCEPT_DIMENSION
+    SELECT 
+      c_fullname concept_path, c_basecode concept_cd, 
+      c_name name_char, CAST( NULL AS VARCHAR2(50) ) concept_blob, 
+      CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
+      CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
+    FROM ACT_COVID 
+    WHERE c_synonym_cd = 'N' and c_basecode is not null 
+      and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension'
+    ```
+    2. _For SQL Server..._ (SQL Server may not recognize the `VARCHAR2` datatype nor the `trim()` function)
+    ```sql
+    INSERT into <crcdata>.<schema>.CONCEPT_DIMENSION
+    SELECT 
+      c_fullname concept_path, c_basecode concept_cd, 
+      c_name name_char, CAST( NULL AS VARCHAR(50) ) concept_blob, 
+      CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
+      CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
+    FROM <metadata>.<schema>.ACT_COVID 
+    WHERE c_synonym_cd = 'N' and c_basecode is not null 
+      and c_dimcode is not null and RTRIM(LTRIM(lower(c_tablename))) = 'concept_dimension';
+    ```
+
+7. Install new `AdapterMappingCovidAllJun1.csv` file in `/opt/shrine/tomcat/lib`, making sure filename matches the name referenced in shrine.conf:
   
-  ```adapterMappingsFileName = "AdapterMappingCovidAllJun1.csv"```
- 
- 7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
- 8. Restart SHRINE
+    ```adapterMappingsFileName = "AdapterMappingCovidAllJun1.csv"```
+
+8. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
+9. Restart SHRINE.
  
 ---
 
 ***Update Install***
 
-1. Truncate table ACT_COVID in i2b2 metadata schema
-2. Truncate table ACT_COVID in shrine_ont schema
-3. Delete COVID ontology elements from CONCEPT_DIMENSION table in the i2b2 CRC schema
+1. Truncate table ACT_COVID in i2b2 metadata schema.
+2. Truncate table ACT_COVID in shrine_ont schema.
+3. Delete COVID ontology elements from CONCEPT_DIMENSION table in the i2b2 CRC schema.
 
-```delete from concept_dimension where concept_path like '\ACT\UMLS_C0031437\%';```
+    ```delete from concept_dimension where concept_path like '\ACT\UMLS_C0031437\%';```
 
-4. Load ACT_COVID table using ACT_COVID_i2b2_<rdb>.sql or ACT_COVID_V3.dsv (pipe delimited everything quoted) file
-5. Add rows to CONCEPT_DIMENSION table (in CRC schema) from your i2b2 metadata schema ACT_COVID table:
-
-```
-INSERT into CONCEPT_DIMENSION
-SELECT 
-  c_fullname concept_path, c_basecode concept_cd, 
-  c_name name_char, CAST( NULL AS VARCHAR2(50) ) concept_blob, 
-  CURRENT_TIMESTAMP update_date, CURRENT_TIMESTAMP download_date, 
-  CURRENT_TIMESTAMP import_date, sourcesystem_cd, 20200531 upload_id
-FROM ACT_COVID 
-WHERE c_synonym_cd = 'N' and c_basecode is not null 
-  and c_dimcode is not null and trim(lower(c_tablename)) = 'concept_dimension'
-```
-6. Install new AdapterMappingCovidAllMay31.csv file in /opt/shrine/tomcat/lib make sure filename matches the name referenced in shrine.conf
-  
-  ```adapterMappingsFileName = "AdapterMappingCovidAllJun1.csv"```
-
-7. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
-8. Restart SHRINE
+4. Load ACT_COVID table in the i2b2 metadata schema using files contained in the ACT_COVID_V3.zip. Use either ACT_COVID_i2b2_&lt;rdb&gt;.sql or ACT_COVID_V3.dsv (pipe-delimited, everything quoted) file. (There is a second DSV file `ACT_COVID_V3D.dsv`; this contains an extra column `HPDS_PATH` for sites that may be also supporting an HPDS instance.)
+5. Repeat Step 4 for the shrine_ont schema.
+6. to 9.  Please follow Steps 6 through 9 as shown above for the "New Install".
 
 
-For any publications or any intellectual property derived from use of the ACT Network please cite the NCATS ACT grant: “This work was supported by the National Center for Advancing Translational Sciences of the National Institutes of Health under grant numbers UL1 TR000005."
+**Citations**
+
+For any publications or any intellectual property derived from use of the ACT Network please cite the NCATS ACT grant: "This work was supported by the National Center for Advancing Translational Sciences of the National Institutes of Health under grant numbers UL1 TR000005."
 
