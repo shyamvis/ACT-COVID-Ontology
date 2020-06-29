@@ -64,15 +64,36 @@ You should see a list similar to the list below. These results need to be mapped
 Any lab that is LOINC coded create an observation fact as you normally would.
 
 **Example**
+For EHR Fact 94500-6 Det
+
+Create the following
 
 | ENCOUNTER_NUM | PATIENT_NUM | CONCEPT_CD | PROVIDER_ID | START_DATE | END_DATE | MODIFIER_CD | INSTANCE_NUM | VALTYPE_CD | LOCATION_CD | TVAL_CHAR | NVAL_NUM | VALUEFLAG_CD | UNITS_CD |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 123 | 234 | LOINC:94500-6 |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Neg |  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 123 | 234 | LOINC:94500-6 |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Neg |  |  |  | 
+| 123 | 234 | LOINC:94500-6 POSITIVE |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Neg |  |  |  | 
+
 
 You will also need to create a derived fact to represent a harmonized version of the lab value. This means
 
 **NON-LOINC CODED Labs **
 
 For any lab result that is not LOINC coded you will need to create a single fact. 
-If it is an Antibody lab with a positive result
-If it is an Antigen lab with a positive result 
+```
+ANY Antibody Lab Test Equivocal	            ACT|LOCAL|LAB:ANY EQUIVOCAL ANTIBODY TEST
+ANY Antibody Lab Test Negative	            ACT|LOCAL|LAB:ANY NEGATIVE ANTIBODY TEST
+ANY Antibody Lab Test Pending               ACT|LOCAL|LAB:ANY PENDING ANTIBODY TEST
+ANY Antibody Lab Test Positive	            ACT|LOCAL|LAB:ANY POSITIVE ANTIBODY TEST
+ANY Nucleic Acid Lab Test Negative          UMLS:C1334932
+ANY Nucleic Acid Lab Test Positive          UMLS:C1335447
+ANY Nucleic Acid Lab Test Pending           UMLS:C1611271
+ANY Nucleic Acid Lab Test Equivocal         UMLS:C4303880
+```
+**Example**
+For EHR Fact COVID-19 PCR Test Neg
+
+You create the following:
+
+| ENCOUNTER_NUM | PATIENT_NUM | CONCEPT_CD | PROVIDER_ID | START_DATE | END_DATE | MODIFIER_CD | INSTANCE_NUM | VALTYPE_CD | LOCATION_CD | TVAL_CHAR | NVAL_NUM | VALUEFLAG_CD | UNITS_CD |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 123 | 234 | UMLS:C1334932 |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Neg |  |  |  | 
