@@ -88,7 +88,7 @@ Due to large file sizes the ontology data files are now contained in a zip file.
   
     ```adapterMappingsFileName = "AdapterMappingCovidAllJun1.csv"```
 
-8. Review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
+8. Gather stats, review indexes on ACT_COVID and CONCEPT_DIMENSION tables.
 9. Restart SHRINE.
  
 ---
