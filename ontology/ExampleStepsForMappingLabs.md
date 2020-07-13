@@ -19,7 +19,8 @@ Now you should have a list of your sites covid labs.
 
 
 Now determine how the lab result values are represented. Execute a query similar to the one below over your lab_results table.
-select distinct <result field> from *lab result table* where *lab* is in *list of covid labs*
+
+select distinct *result field* from *lab result table* where *lab* is in *list of covid labs*
 
 You should see a list similar to the list below. These results need to be mapped to **Positive**, **Negative**, **Pending** and **Equivocal**.
 
