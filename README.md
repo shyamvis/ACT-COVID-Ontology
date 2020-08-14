@@ -1,4 +1,5 @@
 ## ACT-COVID-Ontology
+The COVID-19 ontology that is deployed on the ACT network.
 
 #### ACT COVID resources
 * ACT CVOID ontology in i2b2 - http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (login: demo / password: demouser)
