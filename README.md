@@ -1,4 +1,4 @@
-# ACT-COVID-Ontology
+## ACT-COVID-Ontology
 
 ### ACT COVID resources
 * ACT CVOID ontology in i2b2 - http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (login: demo / password: demouser)
