@@ -67,15 +67,16 @@ Any lab that is LOINC coded create an observation fact as you normally would.
 **Example**
 For EHR Fact 94500-6 Det
 
-Create the following
+Create Row 1 for as you would normally for lab data.
+You will also need to create a derived fact to represent a harmonized version of the lab value (Row 2)
+
 
 | ENCOUNTER_NUM | PATIENT_NUM | CONCEPT_CD | PROVIDER_ID | START_DATE | END_DATE | MODIFIER_CD | INSTANCE_NUM | VALTYPE_CD | LOCATION_CD | TVAL_CHAR | NVAL_NUM | VALUEFLAG_CD | UNITS_CD |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 123 | 234 | LOINC:94500-6 |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Neg |  |  |  | 
-| 123 | 234 | LOINC:94500-6 POSITIVE |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Neg |  |  |  | 
+| 123 | 234 | LOINC:94500-6 |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Pos |  |  |  | 
+| 123 | 234 | LOINC:94500-6 POSITIVE |  9999 | 03-MAR-20 |  | @ | 1 | T | 999 | Pos |  |  |  | 
 
 
-You will also need to create a derived fact to represent a harmonized version of the lab value. This means
 
 **NON-LOINC CODED Labs **
 
