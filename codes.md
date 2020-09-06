@@ -18,14 +18,28 @@
 
 ## New codes
 
-### ICD-10 for diagnosis recording
+### ICD-10
 * An emergency ICD-10 code of ‘U07.1 COVID-19, virus identified’ is assigned to a disease diagnosis of COVID-19 confirmed by laboratory testing.
 * An emergency ICD-10 code of ‘U07.2 COVID-19, virus not identified’ is assigned to a clinical or epidemiological diagnosis of COVID-19 where laboratory confirmation is inconclusive or not available.
 * See https://www.who.int/classifications/icd/covid19/en/
 
 ### CPT
-* 87635 Infectious agent detection by nucleic acid (DNA or RNA); severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2 (Coronavirus disease [COVID-19]), amplified probe technique
-* https://www.ama-assn.org/press-center/press-releases/new-cpt-code-announced-report-novel-coronavirus-test
+* New codes
+* * 87635 Infectious agent detection by nucleic acid (DNA or RNA); severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Coronavirus disease [COVID-19]), amplified
+probe technique - effective March 13, 2020)
+* Revised codes
+* * 86318 Immunoassay for infectious agent antibody(ies), qualitative or semiquantitative, single-step method (eg, reagent strip) - effective April 10, 2020
+* * 86328 Single step antibody testing for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Coronavirus disease [COVID-19]) - effective April 10, 2020
+* * 86769 Multiple-step antibody testing for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Coronavirus disease [COVID-19]) - effective April 10, 2020
+* * 87426 to report infectious agent antigen detection by immunoassay technique of SARS-CoV and SARS-CoV-2
+* * 86408 to report coronavirus 2 (SARS-CoV-2) neutralizing antibody screen - effective August 10, 2020
+* * 86409 to report coronavirus 2 (SARS-CoV-2) neutralizing antibody titer - effective August 10, 2020
+* * PLA code 0202U to report the BioFire® Respiratory Panel 2.1 (RP2.1) test - effective May 20, 2020
+* * PLA code 0223U 
+* * PLA code 0224U
+* * PLA code 0225U
+* * PLCA code 0226U
+* See https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance
 
 ### HCPCS
 * U0001 for CDC testing laboratories to test patients for SARS-CoV-2
