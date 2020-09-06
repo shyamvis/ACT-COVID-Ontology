@@ -19,8 +19,8 @@
 ## New codes
 
 ### ICD-10
-* An emergency ICD-10 code of ‘U07.1 COVID-19, virus identified’ is assigned to a disease diagnosis of COVID-19 confirmed by laboratory testing.
-* An emergency ICD-10 code of ‘U07.2 COVID-19, virus not identified’ is assigned to a clinical or epidemiological diagnosis of COVID-19 where laboratory confirmation is inconclusive or not available.
+* An emergency ICD-10 code of U07.1 COVID-19, virus identified’ is assigned to a disease diagnosis of COVID-19 confirmed by laboratory testing.
+* An emergency ICD-10 code of U07.2 COVID-19, virus not identified’ is assigned to a clinical or epidemiological diagnosis of COVID-19 where laboratory confirmation is inconclusive or not available.
 * See https://www.who.int/classifications/icd/covid19/en/
 
 ### CPT
