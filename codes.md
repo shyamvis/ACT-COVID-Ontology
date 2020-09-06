@@ -38,7 +38,7 @@ probe technique - effective March 13, 2020)
 * * PLA code 0223U 
 * * PLA code 0224U
 * * PLA code 0225U
-* * PLCA code 0226U
+* * PLA code 0226U
 * See https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance
 
 ### HCPCS
