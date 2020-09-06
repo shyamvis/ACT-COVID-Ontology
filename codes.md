@@ -60,6 +60,6 @@ probe technique - effective March 13, 2020)
 
 ### SNOMED CT for the microorganism entities
 * March 2020 release contains relevant COVID-19 concepts (24 records)
-* See https://confluence.ihtsdotools.org/display/snomed/SNOMED%2BCT%2BCoronavirus%2BContent
+* See https://confluence.ihtsdotools.org/display/snomed/SNOMED%2BCT%2BCoronavirus%2BContent and https://confluence.ihtsdotools.org/display/DOCCV19
 
 
