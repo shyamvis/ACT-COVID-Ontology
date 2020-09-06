@@ -23,7 +23,7 @@
 * An emergency ICD-10 code of U07.2 COVID-19, virus not identified’ is assigned to a clinical or epidemiological diagnosis of COVID-19 where laboratory confirmation is inconclusive or not available.
 * See https://www.who.int/classifications/icd/covid19/en/
 
-### CPT
+### CPT-4
 * New codes
 * * 87635 Infectious agent detection by nucleic acid (DNA or RNA); severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Coronavirus disease [COVID-19]), amplified
 probe technique - effective March 13, 2020)
