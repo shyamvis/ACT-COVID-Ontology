@@ -55,8 +55,8 @@ probe technique - effective March 13, 2020)
   * RT-PCR test LOINC 94306-8 (unspecified specimens)
   * IgG and IgM antibody (serology) test LOINC 94503-0 (qualitative results)
   * IgG and IgM antibody (serology) test LOINC 94504-8 (quantitative results)
-* Tests looking for the SARS-CoV-2 nucleic acids (RNA) see https://loinc.org/sars-coronavirus-2/
-* Tests looking for antibodies to SARS-CoV-2 see https://loinc.org/sars-coronavirus-2/
+* Tests for the SARS-CoV-2 nucleic acids (RNA) see https://loinc.org/sars-coronavirus-2/
+* Tests for SARS-CoV-2 antibodies see https://loinc.org/sars-coronavirus-2/
 
 ### SNOMED CT for the microorganism entities
 * March 2020 release contains relevant COVID-19 concepts (24 records)
