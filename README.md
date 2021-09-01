@@ -1,6 +1,9 @@
 ## ACT-COVID-Ontology
 The COVID-19 ontology that is deployed on the ACT network.
 
+#### Publication
+* Development of a Coronavirus Disease 2019 (COVID-19) Application Ontology for the Accrual to Clinical Trials (ACT) network https://academic.oup.com/jamiaopen/article/4/2/ooab036/6237901
+* 
 #### ACT COVID resources
 * ACT COVID ontology in i2b2 - http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/ (login: demo / password: demouser)
 * Inclusion criteria for ACT COVID cohort - https://github.com/shyamvis/covid-phenotyping/blob/master/inclusion-criteria.md
